@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="currency" template="DMTQ_CurrencyFlags::currency.phtml">
+            <arguments>
+                <argument name="view_model" xsi:type="object">DMTQ\CurrencyFlags\ViewModel\FlagsProvider</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceBlock  name="store.settings.currency" template="DMTQ_CurrencyFlags::currency.phtml">
+            <arguments>
+                <argument name="view_model" xsi:type="object">DMTQ\CurrencyFlags\ViewModel\FlagsProvider</argument>
+                <argument name="id_modifier" xsi:type="string">nav</argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

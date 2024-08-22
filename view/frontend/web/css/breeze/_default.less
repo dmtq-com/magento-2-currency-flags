@@ -1,0 +1,42 @@
+& when (@critical) {
+    .switcher-currency {
+        .switcher-options {
+            .switcher-trigger {
+                background-repeat: no-repeat;
+                background-size: 30px 22.5px;
+                background-position-y: center;
+                padding-left: 35px !important;
+            }
+
+            .switcher-dropdown {
+                width: 250px !important;
+                overflow-x: auto;
+
+                .switcher-option {
+                    a {
+                        background-repeat: no-repeat !important;
+                        background-size: 30px 22.5px !important;
+                        background-position-y: center !important;
+                        line-height: 32px;
+                        margin: 5px;
+                        padding: 0 0 0 35px !important;
+                        display: flex !important;
+                        justify-content: start;
+
+                        .currency-title {
+                            opacity: 0.8;
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+
+            @media @media-md {
+                .switcher-dropdown {
+                    max-height: 300px;
+                    overflow-y: auto;
+                }
+            }
+        }
+    }
+}
