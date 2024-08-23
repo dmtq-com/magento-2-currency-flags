@@ -7,6 +7,14 @@
                 background-position-y: center;
                 padding-left: 35px !important;
             }
+            @media @media-md-down {
+                .switcher-trigger {
+                    background-position-x: 5px;
+                    padding: 5px 5px 5px 40px !important;
+                    background-color: #efefef;
+                    border-radius: 5px;
+                }
+            }
 
             .switcher-dropdown {
                 width: 250px !important;
@@ -22,10 +30,13 @@
                         padding: 0 0 0 35px !important;
                         display: flex !important;
                         justify-content: start;
-
+                        gap: 3px;
+                        .currency-code {
+                            min-width: 30px;
+                        }
                         .currency-title {
                             opacity: 0.8;
-                            font-size: 0.9rem;
+                            font-size: 0.9em;
                         }
                     }
                 }

@@ -22,10 +22,13 @@
                         padding: 0 0 0 35px !important;
                         display: flex !important;
                         justify-content: start;
-
+                        gap: 3px;
+                        .currency-code {
+                            min-width: 30px;
+                        }
                         .currency-title {
                             opacity: 0.8;
-                            font-size: 0.9rem;
+                            font-size: 0.9em;
                         }
                     }
                 }
@@ -35,6 +38,16 @@
 }
 
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .switcher-currency {
+        .switcher-options {
+            .switcher-trigger {
+                background-position-x: 5px;
+                padding: 5px 5px 5px 40px !important;
+                background-color: #efefef;
+                border-radius: 5px;
+            }
+        }
+    }
 }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
