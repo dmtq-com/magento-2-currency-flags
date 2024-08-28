@@ -3,7 +3,9 @@ declare(strict_types=1);
 
 namespace DMTQ\CurrencyFlags\ViewModel;
 
+use Magento\Framework\UrlInterface;
 use Magento\Framework\View\Asset\Repository;
+use Magento\Store\Model\StoreManagerInterface;
 
 /**
  * Provides flags.
@@ -16,14 +18,21 @@ class FlagsProvider implements \Magento\Framework\View\Element\Block\ArgumentInt
     private Repository $assetRepo;
 
     /**
+     * @var StoreManagerInterface
+     */
+    protected StoreManagerInterface $storeManager;
+
+    /**
      * @param Repository $assetRepo
+     * @param StoreManagerInterface $storeManager
      */
     public function __construct(
-        Repository $assetRepo,
+        Repository            $assetRepo,
+        StoreManagerInterface $storeManager
     )
     {
-
         $this->assetRepo = $assetRepo;
+        $this->storeManager = $storeManager;
     }
 
     /**
@@ -329,9 +338,10 @@ US Armed Forces,USAF,US Dollar,USD
         if (isset($data[$currencyCode])) {
             $flag = strtolower($data[$currencyCode]);
         }
-        $staticContext = $this->assetRepo->getStaticViewFileContext();
+        // $staticContext = $this->assetRepo->getStaticViewFileContext();
         if ($flag) {
-            return $staticContext->getBaseUrl() . $staticContext->getPath() . '/DMTQ_CurrencyFlags/images/flags/4x3/' . $flag . '.svg';
+            // return $staticContext->getBaseUrl() . $staticContext->getPath() . '/DMTQ_CurrencyFlags/images/flags/4x3/' . $flag . '.svg';
+            return $this->storeManager->getStore()->getBaseUrl(UrlInterface::URL_TYPE_MEDIA) . 'dmtq/currency-flags/4x3/' . $flag . '.svg';
         }
         return '';
     }
