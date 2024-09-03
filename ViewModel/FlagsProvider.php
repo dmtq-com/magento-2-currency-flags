@@ -132,8 +132,8 @@ Niger,NE,CFA Franc BCEAO,XOF
 Senegal,SN,CFA Franc BCEAO,XOF
 Togo,TG,CFA Franc BCEAO,XOF
 Bermuda,BM,Bermudian Dollar,BMD
-Bhutan,BT,Indian Rupee,INR
 India,IN,Indian Rupee,INR
+Bhutan,BT,Indian Rupee,INR
 Bolivia,BO,Boliviano,BOB
 Botswana,BW,Pula,BWP
 Bouvet Island,BV,Norwegian Krone,NOK
@@ -207,8 +207,8 @@ Lebanon,LB,Lebanese Pound,LBP
 Lesotho,LS,Loti,LSL
 Liberia,LR,Liberian Dollar,LRD
 Libyan Arab Jamahiriya,LY,Libyan Dinar,LYD
-Liechtenstein,LI,Swiss Franc,CHF
 Switzerland,CH,Swiss Franc,CHF
+Liechtenstein,LI,Swiss Franc,CHF
 Lithuania,LT,Lita,LTL
 Macau,MO,Pataca,MOP
 Macedonia,MK,Denar,MKD
