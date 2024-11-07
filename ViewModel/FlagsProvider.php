@@ -167,8 +167,8 @@ Faroe Islands,FO,Danish Krone,DKK
 Greenland,GL,Danish Krone,DKK
 Djibouti,DJ,Djiboutian Franc,DJF
 Dominican Republic,DO,Dominican Peso,DOP
-East Timor,TP,Indonesian Rupiah,IDR
 Indonesia,ID,Indonesian Rupiah,IDR
+East Timor,TP,Indonesian Rupiah,IDR
 Ecuador,EC,Sucre,ECS
 Egypt,EG,Egyptian Pound,EGP
 El Salvador,SV,Salvadoran Colon,SVC
